@@ -1,0 +1,19 @@
+2. Prescription Management Service
+Responsibilities: Handles processing and fulfillment of medication prescriptions specific to cardiology (e.g., statins, blood pressure medication).
+Info: "Prescription for aspirin (100mg) successfully created for patient ID: 12345."
+Warn: "Possible drug interaction detected for patient ID: 11223. Blood thinners and beta-blockers prescribed together."
+Error: "Prescription for patient ID: 12345 failed to process due to invalid dosage information."
+
+
+
+SCHEMA : 
+
+BILLNO, PRNO, PTID, PRNAME, DOSAGE
+
+
+
+GET REQ for INFO to display all prescription
+
+POST REQ for INFO
+POST REQ unsafe for WARN
+POST REQ fail for ERROR
